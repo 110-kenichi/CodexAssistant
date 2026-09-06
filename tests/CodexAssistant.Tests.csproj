@@ -6,6 +6,8 @@
  <ItemGroup>
   <Reference Include="System"/><Reference Include="System.Core"/>
   <Compile Include="Program.cs"/>
+  <Compile Include="PatchTests.cs"/>
+  <Compile Include="..\src\CodexAssistant\PatchApplier.cs"><Link>PatchApplier.cs</Link></Compile>
   <Compile Include="..\src\CodexAssistant\ModelSelection.cs"><Link>ModelSelection.cs</Link></Compile>
   <Compile Include="..\src\CodexAssistant\CliRunner.cs"><Link>CliRunner.cs</Link></Compile>
   <Compile Include="..\src\CodexAssistant\TextUtil.cs"><Link>TextUtil.cs</Link></Compile>

@@ -32,6 +32,7 @@ internal static class Program
     private static void Check(bool ok, string message) { if (!ok) throw new Exception(message); }
     private static async Task TestAsync()
     {
+        await PatchTests.Run();
         var exe = Assembly.GetExecutingAssembly().Location;
         var root = Path.Combine(Path.GetTempPath(), "Codex tests 日本語 " + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(root);
