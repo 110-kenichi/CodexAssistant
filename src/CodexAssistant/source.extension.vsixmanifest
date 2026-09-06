@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="CodexAssistant.778fce55-27a0-453f-9295-f7616329a18e" Version="0.2.1" Language="en-US" Publisher="いとけん" />
+    <Identity Id="CodexAssistant.778fce55-27a0-453f-9295-f7616329a18e" Version="0.3.0" Language="en-US" Publisher="いとけん" />
     <DisplayName>Codex Assistant</DisplayName>
     <Description xml:space="preserve">Unofficial Codex CLI chat with automatic Visual Studio solution and editor context.</Description>
   </Metadata>

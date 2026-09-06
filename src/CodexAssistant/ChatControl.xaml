@@ -16,7 +16,7 @@
   <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
   <StackPanel Margin="0,0,0,8">
    <TextBlock Text="Codex Assistant" FontSize="18" FontWeight="SemiBold"/>
-   <TextBlock Text="Solutionとエディター情報を自動取得 · 読み取り専用" TextWrapping="Wrap" Opacity="0.75" Margin="0,4,0,0"/>
+   <TextBlock Text="Solutionを自動認識 · 提案を確認してApplyで適用" TextWrapping="Wrap" Opacity="0.75" Margin="0,4,0,0"/>
    <TextBlock Text="モデル" Margin="0,10,0,3"/>
    <DockPanel>
     <Button DockPanel.Dock="Right" x:Name="SaveModel" Content="保存" Click="SaveModel_Click" ToolTip="VSIX内のモデル選択を保存"/>
@@ -32,7 +32,7 @@
     <DockPanel>
      <WrapPanel DockPanel.Dock="Bottom">
       <Button Content="Save diff" x:Name="SaveDiff" Click="SaveDiff_Click" IsEnabled="False"/>
-      <Button Content="Apply (未実装)" IsEnabled="False" ToolTip="この版では自動適用しません。保存したdiffを確認して適用してください。"/>
+      <Button Content="Apply" x:Name="Apply" Click="Apply_Click" IsEnabled="False" ToolTip="表示中のdiffを検証し、Solution内のソースファイルへ適用します。Gitが必要です。"/>
       <Button Content="Reject" x:Name="Reject" Click="Reject_Click" IsEnabled="False"/>
      </WrapPanel>
      <TextBox x:Name="DiffView" IsReadOnly="True" FontFamily="Consolas" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" BorderThickness="0"/>
