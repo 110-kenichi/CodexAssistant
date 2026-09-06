@@ -1,0 +1,14 @@
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <PropertyGroup>
+  <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><OutputType>Exe</OutputType>
+  <AssemblyName>CodexAssistant.Tests</AssemblyName><OutputPath>bin\$(Configuration)\</OutputPath><LangVersion>latest</LangVersion>
+ </PropertyGroup>
+ <ItemGroup>
+  <Reference Include="System"/><Reference Include="System.Core"/>
+  <Compile Include="Program.cs"/>
+  <Compile Include="..\src\CodexAssistant\ModelSelection.cs"><Link>ModelSelection.cs</Link></Compile>
+  <Compile Include="..\src\CodexAssistant\CliRunner.cs"><Link>CliRunner.cs</Link></Compile>
+  <Compile Include="..\src\CodexAssistant\TextUtil.cs"><Link>TextUtil.cs</Link></Compile>
+ </ItemGroup>
+ <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

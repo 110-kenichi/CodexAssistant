@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+ <Extern href="stdidcmd.h" /><Extern href="vsshlids.h" />
+ <Commands package="guidPackage">
+  <Groups><Group guid="guidCommands" id="WindowGroup" priority="0x0600"><Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_VIEW" /></Group></Groups>
+  <Buttons><Button guid="guidCommands" id="ShowWindow" priority="0x0100" type="Button"><Parent guid="guidCommands" id="WindowGroup" /><Strings><ButtonText>Codex Assistant</ButtonText></Strings></Button></Buttons>
+ </Commands>
+ <Symbols>
+  <GuidSymbol name="guidPackage" value="{778fce55-27a0-453f-9295-f7616329a18e}" />
+  <GuidSymbol name="guidCommands" value="{edcd9a21-c8c2-48ba-a3cf-d0a7cae4f204}"><IDSymbol name="WindowGroup" value="0x1020" /><IDSymbol name="ShowWindow" value="0x0100" /></GuidSymbol>
+ </Symbols>
+</CommandTable>
